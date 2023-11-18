@@ -72,6 +72,6 @@ and navigate the file system and use make from there.
 
 # Final thoughts
 ### Devkitpro examples
-If you look in the /opt folder of the docker container you will find an examples folder for devkitpro. It's got a lot of great code for examples to start development. I'd save have a look for some practice if at the very least to see if you set everything up properly.
+If you look in the /opt folder of the Docker container, you will find an 'examples' folder for devkitpro. It has a lot of great code for starting development. I recommend taking a look for some practice, if only to ensure that you have set everything up properly.
 
 Happy Hacking and obviously huge thanks to everyone involved check out their github projects follow them on twitter etc. This is just a personal branch for myself.
