@@ -66,7 +66,6 @@ void NumberSlider::penDown(u8 px, u8 py)
 void NumberSlider::penUp(u8 px, u8 py)
 {
 	btnstate = false;
-	draw();
 }
 
 void NumberSlider::penMove(u8 px, u8 py)
