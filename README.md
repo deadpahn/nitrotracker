@@ -32,18 +32,17 @@ git clone this branch and enter it via the sCaRy TeRmInAl.
 
 run:
 
+`git clone git@github.com:asiekierka/dsmi.git`
+
+`git clone git@github.com:asiekierka/libntxm.git`
+
+Now we need to do a bunch of stuff (download devkitpro docker image and configure things):
+
 `docker-compose build`
 
 after everything downloads and stuff run
 
 `docker-compose up`
-
-### _Optional_ 
-I've included it all in my repo BUT they will be outdated eventually. They work as of now, but if you want the most up to date versions run these commands:
-
-`git clone git@github.com:asiekierka/dsmi.git`
-
-`git clone git@github.com:asiekierka/libntxm.git`
 
 ### Enter the container:
 

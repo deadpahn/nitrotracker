@@ -66,11 +66,6 @@ void NumberSlider::penDown(u8 px, u8 py)
 void NumberSlider::penUp(u8 px, u8 py)
 {
 	btnstate = false;
-
-	if(onPostChange!=0) {
-		onPostChange(value);
-	}
-
 	draw();
 }
 
