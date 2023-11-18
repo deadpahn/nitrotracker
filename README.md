@@ -23,7 +23,6 @@ For more information, check the `credits.txt` and `licenses.txt`.
 
 - `./dsmi` is also forked from asiekierka. It's probably a good idea to git clone that repository before building, but for simplicity, I'm including it here.
 - `./libntxm` is also forked from asiekierka. ^same
-- `./devkitpro-examples` is actually already included in the devkit pro docker image, but I moved it here for now to easily reference (because I don't know what I'm doing and having to enter a docker container and vim through the `/opt/` dir is a pain in the ass). If you are a noob, go in this dir and have a look.
 
 # Alright, how do I install and build this?!
 Very work in progress instructions but here goes:
@@ -72,4 +71,7 @@ you can use:
 and navigate the file system and use make from there.
 
 # Final thoughts
+### Devkitpro examples
+If you look in the /opt folder of the docker container you will find an examples folder for devkitpro. It's got a lot of great code for examples to start development. I'd save have a look for some practice if at the very least to see if you set everything up properly.
+
 Happy Hacking and obviously huge thanks to everyone involved check out their github projects follow them on twitter etc. This is just a personal branch for myself.
