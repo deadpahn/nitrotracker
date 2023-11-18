@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  devkitpro:
+    image: devkitpro/devkitarm
+    volumes:
+      - .:/home/dev/src   # Map the current directory on the host to /home/dev/src in the container
+    working_dir: /home/dev/src
+    command: tail -f /dev/null
+

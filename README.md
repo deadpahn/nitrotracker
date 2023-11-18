@@ -1,0 +1,78 @@
+Good lord what a shit show ...
+# WELCOME TO MY BUILD OF NITROTRACKER
+
+After hours and hours of trying to figure out what the hell is going on I finally figured out how to compile this fucking thing.
+
+# Disclaimer
+
+This is a person development branch that I forked from the talented asiekierka's unofficial (but the official project isn't being maintained anymore anyway) branch. Click their username up top follow the bread crumbs back to the OG branch by the very talented and now Google AI hotshot 0xtob.
+
+# Why this branch?
+
+Look, I'm not a demo scene bit flipper xor hardware wizard. I'm a 100iq dude from Montreal who has been a web developer for most of his/my life. Nitrotracker has been my primary daw since around 2009. I figured instead of bothering the shit out of the core developers who are hard at work maximizing every cycle from the legendary Nintendo DS/DSi I would see if I can make some features I want to see and maybe fix a few bugs along the way.
+
+# I'm a moron
+
+This branch is designed to help building features a lot easier. I'll include a lot of stuff to help automate the process. It was a pain in the ass to get everything going I'm not gonna lie. If I can somehow help remove that friction, once you get into the code it ain't so bad.
+
+# This is super not official
+
+It's probably best to do pull requests for your features on Adrian's branch. This is more designed to get you up and running in a few minutes than spend an entire afternoon figuring how this works. This is the wild west, documentation is non existed or fragmented, there is not a lot of hand holding, and if you don't got a grasp on what is happening it can be a pain in the butt.
+
+# Credits/Licenses
+For more information check the credits.txt and licenses.txt
+
+* ./dsmi is also forked from asiekierka. Probably a good idea to git clone that repository before building but for simplicity I'm including it here
+
+* ./libntxm is also forked from asiekierka. ^same
+
+* ./devkitpro-examples is actually already included in the devkit pro docker image but I moved it here for now to easily reference (cause I dont know what I'm doing and having to enter a docker container and vim through the /opt/ dir is a pain in the ass). If you are a noob, go in this dir and have a look.
+
+# Alright, how do I install and build this?!
+Very work in progress instructions but here goes:
+
+git clone this branch and enter it via the sCaRy TeRmInAl.
+
+run:
+
+`docker-compose build`
+
+after everything downloads and stuff run
+
+`docker-compose up`
+
+### _Optional_ 
+I've included it all in my repo BUT they will be outdated eventually. They work as of now, but if you want the most up to date versions run these commands:
+
+`git clone git@github.com:asiekierka/dsmi.git`
+
+`git clone git@github.com:asiekierka/libntxm.git`
+
+### Enter the container:
+
+`docker-compose exec devkitpro /bin/bash`
+
+### once in the container run:
+
+`apt install pip`
+
+`pip install pillow`
+
+`pip install image`
+(I know I should have this in the Dockerfile but it wasn't working I'll fix it later)
+ 
+# How the hell do I make the .nds file now? 
+
+In the root folder you can run: 
+
+`docker-compose exec devkitpro make`
+
+## OR 
+
+you can use:
+
+`docker-compose exec devkitpro /bin/bash`
+
+and navigate the file system and use make from there.
+
+Happy Hacking and obviously huge thanks to everyone involved check out their github projects follow them on twitter etc. This is just a personal branch for myself.
